@@ -33,7 +33,7 @@ def is_night():
     time_now = datetime.now()
 
     if time_now >= sunset or time_now <= sunrise:
-        It's Dark
+        return True
 
 # If the ISS is close to my current position
 # and it is currently dark
