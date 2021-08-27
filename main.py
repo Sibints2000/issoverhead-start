@@ -1,6 +1,9 @@
 import requests
 from datetime import datetime
+import smtplib
 
+MY_EMAIL = "thurrappattujoseph@gmail.com"
+MY_PASSWORD = "thurrappattu@007"
 MY_LAT = 51.507351  # Your latitude
 MY_LONG = -0.127758  # Your longitude
 
@@ -34,6 +37,8 @@ def is_night():
 
     if time_now >= sunset or time_now <= sunrise:
         return True
+
+if i
 
 # Then send me an email to tell me to look up.
 # BONUS: run the code every 60 seconds.
