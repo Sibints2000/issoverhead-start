@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime
 import smtplib
+import time
 
 MY_EMAIL = "thurrappattujoseph@gmail.com"
 MY_PASSWORD = "thurrappattu@007"
@@ -40,6 +41,7 @@ def is_night():
 
 
 while True:
+    time.sleep(60)
     if is_iss_overhead() and is_night():
         connection = smtplib.SMTP("smtp.gmail.com")
         connection.starttls()
