@@ -41,7 +41,12 @@ def is_night():
 if is_iss_overhead() and is_night():
     connection = smtplib.SMTP("smtp.gmail.com")
     connection.starttls()
-    co
+    connection.login(MY_EMAIL, MY_PASSWORD)
+    connection.sendmail(
+        from_addr=MY_EMAIL,
+        to_addrs=MY_EMAIL,
+
+    )
 
 # Then send me an email to tell me to look up.
 # BONUS: run the code every 60 seconds.
