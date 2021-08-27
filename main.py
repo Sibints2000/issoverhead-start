@@ -38,7 +38,10 @@ def is_night():
     if time_now >= sunset or time_now <= sunrise:
         return True
 
-if i
+if is_iss_overhead() and is_night():
+    connection = smtplib.SMTP("smtp.gmail.com")
+    connection.starttls()
+    co
 
 # Then send me an email to tell me to look up.
 # BONUS: run the code every 60 seconds.
