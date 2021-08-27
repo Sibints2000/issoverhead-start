@@ -32,7 +32,7 @@ def is_night():
 
     time_now = datetime.now()
 
-#If the ISS is close to my current position
+# If the ISS is close to my current position
 # and it is currently dark
 # Then send me an email to tell me to look up.
 # BONUS: run the code every 60 seconds.
